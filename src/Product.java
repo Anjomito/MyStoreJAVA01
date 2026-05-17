@@ -3,13 +3,9 @@ public class Product {
     private int price;
     private int stock;
 
-    public String getNameproduct(){
-        return Nameproduct;
-    }
+    public String getNameproduct(){ return Nameproduct; }
 
-    public int getPrice() {
-        return price;
-    }
+    public int getPrice() { return price; }
 
     public int getStock() {
         return stock;
