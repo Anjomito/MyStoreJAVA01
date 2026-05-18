@@ -22,4 +22,20 @@ public class Shop {
         System.out.println("ราคารวมสินค้าทุกชิ้น "+total);
     }
 
+    public int sell(String productname ){
+        for (Product name : products){
+            if (name.getNameproduct().equalsIgnoreCase(productname)){
+                if (name.getStock() <= 0){
+                    System.out.println("สินค้าหมดแล้ว");
+                    return 0;
+                }else {
+                    name.setStock(name.getStock()-1);
+                    return name.getPrice();
+                }
+            }
+        }
+        System.out.println("ไม่มีสินค้านี้");
+        return 0;
+    }
+
 }
