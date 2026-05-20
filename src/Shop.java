@@ -14,7 +14,7 @@ public class Shop {
     }
 
     public void summary(){
-        int total = 0;
+        double total = 0;
         for (Product name : products){
             total = total + (name.getPrice()* name.getStock());
         }
@@ -22,7 +22,7 @@ public class Shop {
         System.out.println("ราคารวมสินค้าทุกชิ้น "+total);
     }
 
-    public int sell(String productname ){
+    public double sell(String productname ){
         for (Product name : products){
             if (name.getNameproduct().equalsIgnoreCase(productname)){
                 if (name.getStock() <= 0){

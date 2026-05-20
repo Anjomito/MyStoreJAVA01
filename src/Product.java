@@ -1,17 +1,17 @@
 public class Product {
     private String Nameproduct;
-    private int price;
+    private double price;
     private int stock;
 
     public String getNameproduct(){ return Nameproduct; }
 
-    public int getPrice() { return price; }
+    public double getPrice() { return price; }
 
     public int getStock() {
         return stock;
     }
 
-    public void setPrice(int newPrice){
+    public void setPrice(double newPrice){
         if (newPrice < 0){
             System.out.println("ราคาติดลบไม่ได้");
         } else {
@@ -27,7 +27,7 @@ public class Product {
         }
     }
 
-    public Product(String Nameproduct, int price, int stock){
+    public Product(String Nameproduct, double price, int stock){
         this.Nameproduct = Nameproduct;
         setPrice(price);
         setStock(stock);

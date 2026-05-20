@@ -33,7 +33,6 @@ public class ListStore {
                     break;
                 } else {listproduct.add(inputlistproduct);}
 
-                System.out.println("เพิ่ม "+ inputlistproduct + " เรียบร้อยแล้ว\nมีสินค้าทั้งหมด " + listproduct.size()+" รายการ");
                 System.out.println();
             }
         }
