@@ -11,6 +11,7 @@ public class Shop {
         for (Product name : products){
             System.out.println(name.getNameproduct()+" ราคา "+name.getPrice()+" บาท จำนวน "+name.getStock()+" ชิ้น");
         }
+        System.out.println();
     }
 
     public void summary(){
@@ -20,6 +21,7 @@ public class Shop {
         }
         System.out.println("มีรายการสินค้าทั้งหมด "+products.size()+" รายการ");
         System.out.println("ราคารวมสินค้าทุกชิ้น "+total);
+        System.out.println();
     }
 
     public double sell(String productname ){
